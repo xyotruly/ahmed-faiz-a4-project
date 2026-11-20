@@ -321,7 +321,8 @@ namespace MohawkGame2D
                 float distance = Vector2.Distance(
                     player.Position, key.Position);
 
-                if (!key.Collected && distance < 22)
+                // Allow the player to collect nearby keys.
+                if (!key.Collected && distance < 26)
                 {
                     key.Collect();
                     keysCollected++;
