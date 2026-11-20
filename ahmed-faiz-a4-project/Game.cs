@@ -143,7 +143,8 @@ namespace MohawkGame2D
     {
         public Vector2 Position { get; private set; }
 
-        private float speed = 4f;
+        // Adjust player movement speed for smoother maze navigation.
+        private float speed = 3.5f;
         private const float Radius = 12f;
 
         public DungeonPlayer(float x, float y)
