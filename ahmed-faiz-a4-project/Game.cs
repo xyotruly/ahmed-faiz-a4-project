@@ -265,11 +265,11 @@ namespace MohawkGame2D
             keys[2] = new DungeonKey(620, 270);
             keys[3] = new DungeonKey(650, 390);
 
-            // Four moving guards.
+            // Give each guard a different patrol speed.
             guards[0] = new DungeonGuard(300, 510, 2, 65);
-            guards[1] = new DungeonGuard(480, 390, 2, 60);
-            guards[2] = new DungeonGuard(320, 270, 2, 55);
-            guards[3] = new DungeonGuard(560, 90, 2, 50);
+            guards[1] = new DungeonGuard(480, 390, 3, 60);
+            guards[2] = new DungeonGuard(320, 270, 2.5f, 55);
+            guards[3] = new DungeonGuard(560, 90, 3, 50);
 
             // Outer walls.
             walls[0] = new DungeonWall(0, 0, 800, 15);
